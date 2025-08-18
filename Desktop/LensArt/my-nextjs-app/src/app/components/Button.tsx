@@ -6,12 +6,19 @@ interface buttonProps {
 }
 
 const Button = ({ label }: buttonProps) => {
-  return <button>
-    <h2 className="">{label}</h2>
-    <span className="">
-        <RiArrowRightUpLongLine />
+  return ( 
+  <button className="flex items-center gap-2.5
+    max-w-max">
+        <h2 className="flex items-center gap-2.5
+    max-w-max">
+        {label}</h2>
+    <span className="bg-purple-600 w-20 h-12 flex 
+    items-center justify-center rounded-full
+    hover:bg-purple-500 transition-colors">
+        <RiArrowRightUpLongLine size={26} />
     </span>
     </button>
+  );
 };
 
 export default Button;

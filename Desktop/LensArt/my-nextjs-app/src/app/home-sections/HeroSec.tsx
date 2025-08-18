@@ -8,7 +8,8 @@ const HeroSec = () => {
   return (
     <section>
         {/*content*/}
-        <div className="container">
+        <div className="container grid
+        lg:grid-cols-3 lg:items-center">
             {/*Title*/}
             <div className="">
                 <p className="subtitle">
@@ -20,17 +21,19 @@ const HeroSec = () => {
                 </h1>
             </div>
             {/*shape*/}
-            <div className="">
+            <div className="max-lg:hidden">
                 <Image src="/images/shape-1.svg" 
-                alt="Shape" width={346} height={346} />
+                alt="Shape"
+                width={346} 
+                height={346} />
             </div>
             {/*Title 2*/}
         
 
-        <div>
-        <Button label="Let's"/>
-        <h2>Work Together</h2>
-        </div>
+            <div>
+                <Button label="Let's"/>
+                <h2>Work Together</h2>
+            </div>
         </div>
         {/*marquee*/}
         <MarqueeSec />
